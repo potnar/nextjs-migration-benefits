@@ -250,7 +250,7 @@ export default function ConversionChart() {
                 />
                 <Tooltip content={<CustomTooltip />} />
                 <ReferenceLine x="2.0s" stroke="#3FB950" strokeDasharray="4 4" label={{ value: "Next.js ~", fill: "#3FB950", fontSize: 11 }} />
-                <ReferenceLine x="4.0s" stroke="#F97316" strokeDasharray="4 4" label={{ value: "Twig ~", fill: "#F97316", fontSize: 11 }} />
+                <ReferenceLine x="4.0s" stroke="#F97316" strokeDasharray="4 4" label={{ value: "Legacy ~", fill: "#F97316", fontSize: 11 }} />
                 <Area
                   type="monotone"
                   dataKey="conversion"
@@ -269,7 +269,7 @@ export default function ConversionChart() {
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-3 h-0.5 bg-[#F97316]" />
-                Twig/Symfony (typowe ~3-5s)
+                Legacy PHP/monolith (typowe ~3-5s)
               </span>
             </div>
           </div>

@@ -73,6 +73,18 @@ export default function TabbedShowcase({ items }: { items: ShowcaseItem[] }) {
                   >
                     {item.industry}
                   </span>
+                  {item.verified ? (
+                    <span className="text-xs px-2 py-0.5 rounded-full border font-medium text-[#3FB950] border-[#3FB950]/30 bg-[#3FB950]/10 flex items-center gap-1">
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Zweryfikowane
+                    </span>
+                  ) : (
+                    <span className="text-xs px-2 py-0.5 rounded-full border font-medium text-[#D29922] border-[#D29922]/30 bg-[#D29922]/10">
+                      Case study
+                    </span>
+                  )}
                 </div>
                 <span className="text-xs text-[#8B949E] mt-0.5">{item.url}</span>
               </div>

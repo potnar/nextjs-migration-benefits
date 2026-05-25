@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Korzyści migracji z Twig/Symfony na Next.js",
+  title: "Korzyści migracji z legacy monolitu na Next.js",
   description:
-    "Analiza korzyści dla firm po migracji z Twig/Symfony na Next.js — case studies, metryki, ROI, plan migracji",
-  keywords: "Next.js, Symfony, Twig, migracja, wydajność, web development",
+    "Analiza korzyści dla firm po migracji z legacy monolitu / PHP na Next.js — case studies, metryki, ROI",
+  keywords: "Next.js, migracja, legacy PHP, monolith, wydajność, web development",
 };
 
 export default function RootLayout({

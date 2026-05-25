@@ -13,9 +13,15 @@ const sources = [
       },
       {
         title: "Naturaily — Next.js Features, Benefits & Case Studies",
-        description: "Szczegółowe case studies: Best IT (−96% rebuild), FGS Global (Lighthouse 90+), Nanobébé (+18% mobile conversions).",
+        description: "Szczegółowe case studies: Best IT (−96% rebuild time), FGS Global (Lighthouse 90+), migracje z legacy PHP/monolitu.",
         url: "https://naturaily.com/blog/nextjs-features-benefits-case-studies",
         domain: "naturaily.com",
+      },
+      {
+        title: "Vercel — Desenio Case Study",
+        description: "Desenio: po przejęciu The Poster Store zmigrował z monolitu — deploy z 2h do minut, +34% konwersje, 30 nowych rynków.",
+        url: "https://vercel.com/customers/desenio",
+        domain: "vercel.com",
       },
       {
         title: "5hz.io — Next.js E-commerce: Faster Conversions & Custom CMS",

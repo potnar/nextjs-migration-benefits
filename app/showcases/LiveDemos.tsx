@@ -152,10 +152,10 @@ function RenderingDemo() {
       steps: ["Żądanie → serwer", "Fetch danych + render HTML", "Response do klienta"],
     },
     csr: {
-      label: "CSR (Twig)", color: "#F85149", icon: "🐌",
-      desc: "Typowe podejście Twig: PHP renderuje HTML, JS dokłada interaktywność. Wolny initial load.",
+      label: "Legacy PHP", color: "#F85149", icon: "🐌",
+      desc: "Typowe podejście legacy PHP/monolith: serwer renderuje HTML, JS dokłada interaktywność. Wolny initial load.",
       ttfb: "~600ms", fcp: "~2.4s", tti: "~3.8s",
-      steps: ["Żądanie → PHP server", "Symfony + Twig render", "HTML + osobne requesty JS/CSS"],
+      steps: ["Żądanie → PHP server", "Monolith + template render", "HTML + osobne requesty JS/CSS"],
     },
   };
 
@@ -170,7 +170,7 @@ function RenderingDemo() {
       setContent(
         mode === "ssg" ? "Treść załadowana natychmiast ze statycznego cache." :
         mode === "ssr" ? "Treść pobrana i wyrenderowana przez serwer w czasie rzeczywistym." :
-        "Treść załadowana przez PHP/Twig + czas na hydratację JS..."
+        "Treść załadowana przez legacy PHP/monolith + czas na hydratację JS..."
       );
     }, delay);
   };
@@ -178,7 +178,7 @@ function RenderingDemo() {
   return (
     <div className="space-y-4">
       <p className="text-xs text-[#8B949E] leading-relaxed">
-        <strong className="text-[#E6EDF3]">Strategie renderowania</strong> — Next.js daje pełną kontrolę: SSG, SSR, ISR lub CSR. Twig jest ograniczony do server-side PHP.
+        <strong className="text-[#E6EDF3]">Strategie renderowania</strong> — Next.js daje pełną kontrolę: SSG, SSR, ISR lub CSR. Legacy PHP/monolith jest ograniczony do server-side render.
       </p>
       <div className="flex gap-1 bg-[#0D1117] border border-[#30363D] rounded-xl p-1">
         {(Object.keys(modes) as Array<keyof typeof modes>).map((m) => (
@@ -277,7 +277,7 @@ function CWVDemo() {
                 ? s === "nextjs" ? "bg-[#3FB950]/15 text-[#3FB950] border border-[#3FB950]/30" : "bg-[#F85149]/15 text-[#F85149] border border-[#F85149]/30"
                 : "bg-[#161B22] border border-[#30363D] text-[#8B949E] hover:text-[#E6EDF3]"
             }`}>
-            {s === "nextjs" ? "▲ Next.js" : "🐘 Twig/Symfony"}
+            {s === "nextjs" ? "▲ Next.js" : "🐘 Legacy PHP"}
           </button>
         ))}
       </div>

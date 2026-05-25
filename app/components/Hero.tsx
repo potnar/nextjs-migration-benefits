@@ -26,12 +26,12 @@ const metrics = [
     icon: "📈",
   },
   {
-    value: "+18%",
-    label: "Mobile Conversions",
-    company: "Nanobébé",
+    value: "+34%",
+    label: "Konwersje",
+    company: "Desenio",
     color: "from-green-500/20 to-green-600/5",
     border: "border-green-500/30",
-    icon: "📱",
+    icon: "🛒",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            z Twig/Symfony na Next.js
+            z legacy monolitu na Next.js
           </span>
         </h1>
 

@@ -80,12 +80,24 @@ export default function ShowcaseCard({ item }: { item: ShowcaseItem }) {
         {/* Company + toggle */}
         <div className="flex items-start justify-between mb-4">
           <div>
-            <div className="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-1 flex-wrap">
               <h3 className="text-lg font-bold text-[#E6EDF3]">{item.company}</h3>
               <span className="text-xs px-2 py-0.5 rounded-full border"
                 style={{ color: item.color, borderColor: `${item.color}40`, backgroundColor: `${item.color}10` }}>
                 {item.industry}
               </span>
+              {item.verified ? (
+                <span className="text-xs px-2 py-0.5 rounded-full border font-medium text-[#3FB950] border-[#3FB950]/30 bg-[#3FB950]/10 flex items-center gap-1">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Zweryfikowane
+                </span>
+              ) : (
+                <span className="text-xs px-2 py-0.5 rounded-full border font-medium text-[#D29922] border-[#D29922]/30 bg-[#D29922]/10">
+                  Case study
+                </span>
+              )}
             </div>
             <p className="text-xs text-[#8B949E] leading-relaxed max-w-xs">{item.description}</p>
           </div>
