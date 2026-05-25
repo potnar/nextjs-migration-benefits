@@ -63,6 +63,12 @@ export default function Navbar() {
             >
               Showcases ✦
             </Link>
+            <Link
+              href="/sprint-board"
+              className="px-3 py-1.5 text-sm font-medium text-[#3FB950] hover:bg-[#3FB950]/10 rounded-md transition-colors border border-[#3FB950]/30 ml-1"
+            >
+              Sprint Board ✦
+            </Link>
           </div>
 
           {/* Mobile burger */}
@@ -99,6 +105,13 @@ export default function Navbar() {
               className="block w-full text-left px-4 py-2.5 text-sm text-[#0070F3] hover:bg-[#0070F3]/10 transition-colors font-medium"
             >
               Showcases ✦
+            </Link>
+            <Link
+              href="/sprint-board"
+              onClick={() => setMenuOpen(false)}
+              className="block w-full text-left px-4 py-2.5 text-sm text-[#3FB950] hover:bg-[#3FB950]/10 transition-colors font-medium"
+            >
+              Sprint Board ✦
             </Link>
           </div>
         )}
