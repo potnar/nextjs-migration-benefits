@@ -1,6 +1,7 @@
 export type ShowcaseItem = {
   company: string;
   url: string;
+  websiteUrl: string;
   industry: string;
   category: "ecommerce" | "saas" | "media" | "services";
   color: string;
@@ -30,6 +31,7 @@ export const showcases: ShowcaseItem[] = [
   {
     company: "Sonos",
     url: "sonos.com",
+    websiteUrl: "https://www.sonos.com",
     industry: "Consumer Electronics",
     category: "ecommerce",
     color: "#E8452C",
@@ -49,6 +51,7 @@ export const showcases: ShowcaseItem[] = [
   {
     company: "Best IT",
     url: "bestit.com",
+    websiteUrl: "https://naturaily.com/blog/nextjs-features-benefits-case-studies",
     industry: "IT Services",
     category: "services",
     color: "#6C63FF",
@@ -68,6 +71,7 @@ export const showcases: ShowcaseItem[] = [
   {
     company: "FGS Global",
     url: "fgsglobal.com",
+    websiteUrl: "https://www.fgsglobal.com",
     industry: "Communications",
     category: "services",
     color: "#0EA5E9",
@@ -87,6 +91,7 @@ export const showcases: ShowcaseItem[] = [
   {
     company: "Nanobébé",
     url: "nanobebe.com",
+    websiteUrl: "https://nanobebe.com",
     industry: "E-commerce / Baby Products",
     category: "ecommerce",
     color: "#F472B6",
@@ -105,7 +110,8 @@ export const showcases: ShowcaseItem[] = [
   },
   {
     company: "Fashion Retailer",
-    url: "example-fashion.com",
+    url: "anonimowy case study",
+    websiteUrl: "https://www.5hz.io/blog/nextjs-ecommerce-faster-conversions-custom-cms",
     industry: "E-commerce / Fashion",
     category: "ecommerce",
     color: "#F97316",
@@ -125,6 +131,7 @@ export const showcases: ShowcaseItem[] = [
   {
     company: "Vercel SaaS",
     url: "vercel.com/customers",
+    websiteUrl: "https://vercel.com/customers",
     industry: "SaaS",
     category: "saas",
     color: "#10B981",

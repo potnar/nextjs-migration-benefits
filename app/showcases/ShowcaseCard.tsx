@@ -145,7 +145,7 @@ export default function ShowcaseCard({ item }: { item: ShowcaseItem }) {
         </div>
 
         {/* Metrics badges */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-5">
           {item.metrics.map((m) => (
             <div key={m.label} className="flex items-center gap-1.5 bg-[#0D1117] border border-[#30363D] rounded-lg px-3 py-2">
               <span className={`text-sm font-bold ${m.positive ? "text-[#3FB950]" : "text-[#F85149]"}`}>
@@ -156,18 +156,35 @@ export default function ShowcaseCard({ item }: { item: ShowcaseItem }) {
           ))}
         </div>
 
-        {/* Source */}
-        <a
-          href={item.source}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-xs text-[#8B949E] hover:text-[#0070F3] transition-colors"
-        >
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-          Źródło: {item.sourceLabel}
-        </a>
+        {/* CTA + Source row */}
+        <div className="flex items-center justify-between gap-3 flex-wrap border-t border-[#30363D]/50 pt-4">
+          <a
+            href={item.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
+            style={{ backgroundColor: item.color }}
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            {item.company === "Fashion Retailer" || item.company === "Best IT"
+              ? "Case study →"
+              : "Otwórz stronę →"}
+          </a>
+
+          <a
+            href={item.source}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs text-[#8B949E] hover:text-[#0070F3] transition-colors"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Źródło: {item.sourceLabel}
+          </a>
+        </div>
       </div>
     </div>
   );
