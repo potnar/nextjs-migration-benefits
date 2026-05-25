@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import LighthouseGauge from "./LighthouseGauge";
-import type { ShowcaseItem } from "./page";
+import type { ShowcaseItem } from "./data";
 
 const lighthouseCategories = [
   { key: "performance",    label: "Perf." },
