@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const navLinks = [
   { href: "#hero", label: "Start" },
@@ -56,6 +57,12 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <Link
+              href="/showcases"
+              className="px-3 py-1.5 text-sm font-medium text-[#0070F3] hover:bg-[#0070F3]/10 rounded-md transition-colors border border-[#0070F3]/30 ml-1"
+            >
+              Showcases ✦
+            </Link>
           </div>
 
           {/* Mobile burger */}
@@ -86,6 +93,13 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <Link
+              href="/showcases"
+              onClick={() => setMenuOpen(false)}
+              className="block w-full text-left px-4 py-2.5 text-sm text-[#0070F3] hover:bg-[#0070F3]/10 transition-colors font-medium"
+            >
+              Showcases ✦
+            </Link>
           </div>
         )}
       </div>
