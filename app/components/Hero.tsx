@@ -97,10 +97,10 @@ export default function Hero() {
             Zobacz Case Studies
           </button>
           <button
-            onClick={() => scrollToSection("#roadmap")}
+            onClick={() => scrollToSection("#comparison")}
             className="px-8 py-3.5 border border-[#30363D] hover:border-[#0070F3]/50 text-[#E6EDF3] rounded-lg font-semibold transition-all duration-200 hover:bg-[#161B22] w-full sm:w-auto"
           >
-            Plan migracji →
+            Porównanie →
           </button>
         </div>
 

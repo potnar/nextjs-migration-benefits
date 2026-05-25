@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#case-studies", label: "Case Studies" },
   { href: "#conversions", label: "Konwersje" },
   { href: "#comparison", label: "Porównanie" },
-  { href: "#roadmap", label: "Roadmap" },
   { href: "#sources", label: "Źródła" },
 ];
 

@@ -54,8 +54,8 @@ const sources = [
     color: "#8B5CF6",
     items: [
       {
-        title: "Next.js 14 — App Router dokumentacja",
-        description: "Oficjalna dokumentacja Next.js 14 z App Router, Server Components, Metadata API.",
+        title: "Next.js — App Router dokumentacja",
+        description: "Oficjalna dokumentacja Next.js z App Router, Server Components, Metadata API.",
         url: "https://nextjs.org/docs",
         domain: "nextjs.org",
       },

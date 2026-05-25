@@ -27,7 +27,7 @@ export default function Footer() {
           >
             Vercel
           </a>
-          <span>Zbudowane z Next.js 14 + Tailwind CSS</span>
+          <span>Zbudowane z Next.js + Tailwind CSS</span>
         </div>
       </div>
     </footer>
